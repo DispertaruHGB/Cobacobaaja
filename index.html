@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Permohonan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tracking Permohonan</h1>
+        <p>Masukkan nomor ID permohonan untuk melihat status.</p>
+        <input type="text" id="idInput" placeholder="Masukkan ID Permohonan (contoh: ABC123)">
+        <button onclick="trackStatus()">Cek Status</button>
+        <div id="result"></div>
+        
+        <!-- Timeline progress bar -->
+        <div id="timeline" style="display: none;">
+            <h3>Proses Permohonan</h3>
+            <div class="progress-container">
+                <div class="step" id="step1">
+                    <div class="circle" id="circle1"></div>
+                    <p>Permohonan diterima</p>
+                </div>
+                <div class="step" id="step2">
+                    <div class="circle" id="circle2"></div>
+                    <p>Dijadwalkan rapat</p>
+                </div>
+                <div class="step" id="step3">
+                    <div class="circle" id="circle3"></div>
+                    <p>Sudah dirapatkan</p>
+                </div>
+                <div class="step" id="step4">
+                    <div class="circle" id="circle4"></div>
+                    <p>Surat Tanggapan dalam proses</p>
+                </div>
+                <div class="step" id="step5">
+                    <div class="circle" id="circle5"></div>
+                    <p>Surat Tanggapan siap diambil</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
